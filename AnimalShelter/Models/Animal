@@ -9,6 +9,9 @@ namespace AnimalShelter.Models
     [Required]
     [StringLength(25)]
     public string Name { get; set; }
+
+    [Required]
+    public string Type { get; set; }
     
     [Required]
     [Range(0, 30, ErrorMessage = "Age must be between 0 and 30.")]
