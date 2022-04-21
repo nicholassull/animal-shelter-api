@@ -47,6 +47,9 @@ _Detailed Description..._
 
 >dotnet run
 
+## Using the API
+* Add instructions on using Postman
+### Endpoints
 
 ## Known Bugs
 
