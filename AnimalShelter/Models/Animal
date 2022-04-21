@@ -20,6 +20,5 @@ namespace AnimalShelter.Models
     [Required]
     [StringLength(500, ErrorMessage = "Description must be under 500 characters.")]
     public string Description { get; set; }
-
   }
 }
