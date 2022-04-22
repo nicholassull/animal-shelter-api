@@ -19,7 +19,7 @@ namespace AnimalShelter.Controllers
 
     // GET api/animals
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, int age, string type, string sex)
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, string type, string sex, int maximumAge)
     {
       var query = _db.Animals.AsQueryable();
 
@@ -35,8 +35,14 @@ namespace AnimalShelter.Controllers
       {
         query = query.Where(entry => entry.Type == type);
       }
+      if (maximumAge != null)
+      {
+        query = query.Where(entry => entry.Age <= maximumAge);
+      }
 
       return await query.ToListAsync();
     }
+
+    // Get
   }
 }
