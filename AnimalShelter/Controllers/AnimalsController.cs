@@ -17,7 +17,7 @@ namespace AnimalShelter.Controllers
       _db = db;
     }
 
-    // GET api/animals
+    // GET: api/animals
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, string type, string sex, int maximumAge)
     {
@@ -35,7 +35,7 @@ namespace AnimalShelter.Controllers
       {
         query = query.Where(entry => entry.Type == type);
       }
-      if (maximumAge != null)
+      if (maximumAge > 0)
       {
         query = query.Where(entry => entry.Age <= maximumAge);
       }
@@ -43,7 +43,7 @@ namespace AnimalShelter.Controllers
       return await query.ToListAsync();
     }
 
-    // Get: api/animals/{id}
+    // GET: api/animals/{id}
     [HttpGet("{id}")]
     public async Task<ActionResult<Animal>> GetAnimal(int id)
     {
@@ -53,6 +53,16 @@ namespace AnimalShelter.Controllers
         return NotFound();
       }
       return animal;
+    }
+
+    // POST: api/animals/
+    [HttpPost]
+    public async Task<ActionResult<Animal>> Post(Animal animal)
+    {
+      _db.Animals.Add(animal);
+      await _db.SaveChangesAsync();
+
+      return CreatedAtAction(nameof(GetAnimal), new { id = animal.AnimalId }, animal);
     }
   }
 }
