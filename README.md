@@ -9,6 +9,7 @@
 * _C#_
 * _ASP.NET Core_
 * _Swagger_
+* _Postman_
 * _Entity Framework Core_
 * _MySQL Workbench_
 
