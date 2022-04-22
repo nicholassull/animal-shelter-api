@@ -27,6 +27,14 @@ namespace AnimalShelter.Controllers
       {
         query = query.Where(entry => entry.Name == name);
       }
+      if (sex != null)
+      {
+        query = query.Where(entry => entry.Sex == sex);
+      }
+      if (type != null)
+      {
+        query = query.Where(entry => entry.Type == type);
+      }
 
       return await query.ToListAsync();
     }
