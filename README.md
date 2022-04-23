@@ -55,9 +55,13 @@ _This API is designed to offer animal shelter managers a straightforward way to 
 > http://localhost:5000/
 * Copy this URL into your browser to be directed to the swagger documentation page.
   * If you receive an error, try http://localhost:5001/ instead.
-* By clicking the Animals button, a list of different endpoints will be shown. These endpoints are the different ways a user can interact with the API.
-### Example
-* A user wants to 
+* By clicking the large Animals button, a list of different endpoints will be shown. These endpoints are the different ways a user can interact with the API.
+### Example 1 - GET All
+* We want to get a list of all animals currently at the shelter. How would we do that?
+* Click the first GET endpoint with the URL '/Animals'. This will show a dropdown menu with the various possible search parameters. Since we want a list of all animals in the shelter, we can ignore the parameters for now.
+* Click the 'Try it out' button. Then, click 'Execute'.
+* In the 'Response Body' bellow, we can now see the details on each animal currently registered within the database.
+* Experiment further by filling in the different search parameters, like maximum age, sex, and type (cat or dog).
 
 ## Known Bugs
 
