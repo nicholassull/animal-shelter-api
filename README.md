@@ -17,6 +17,7 @@
 
 _This API is designed to offer animal shelter managers a straightforward way to store records of the sheltered animals, as well as provide potential adoptees an easy way to search for a new companion. An entered animal can be given a name, age, type (cat or dog), sex, and a general description. By using the different endpoints, explained below, users can add new animals to the API and search by the different parameters. Along with these features, users can update existing entries as well as delete entries once an animal finds a home._
 
+---
 ## Setup Instructions
 
 * _Open your terminal and navigate to the folder you'd like to download the files into._
@@ -34,7 +35,7 @@ _This API is designed to offer animal shelter managers a straightforward way to 
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd=epicodus;"
+    "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd=[YOUR-PASSWORD];"
   }
 }
   * Replace [YOUR-PASSWORD] with the password you created within MySQL Workbench and make sure the port matches your own.
@@ -47,15 +48,22 @@ _This API is designed to offer animal shelter managers a straightforward way to 
 >dotnet build
 
 >dotnet run
-
+---
 ## Using the API
-* Add instructions on using Postman
-### Endpoints
+* This API uses [Swagger](https://swagger.io/) to make experimentation and use simple.
+* Once the above commands have been executed, the terminal should provide with you URL bellow.
+> http://localhost:5000/
+* Copy this URL into your browser to be directed to the swagger documentation page.
+  * If you receive an error, try http://localhost:5001/ instead.
+* By clicking the Animals button, a list of different endpoints will be shown. These endpoints are the different ways a user can interact with the API.
+### Example
+* A user wants to 
 
 ## Known Bugs
 
 * _No known bugs at this time._
 
+---
 ## License
 
 Copyright (c) _04/21/2022_ _by Nick Sullivan_
