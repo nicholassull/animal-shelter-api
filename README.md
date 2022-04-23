@@ -62,7 +62,20 @@ _This API is designed to offer animal shelter managers a straightforward way to 
 * Click the 'Try it out' button. Then, click 'Execute'.
 * In the 'Response Body' bellow, we can now see the details on each animal currently registered within the database.
 * Experiment further by filling in the different search parameters, like maximum age, sex, and type (cat or dog).
-
+### Example 2 - POST
+* As the manager of the shelter, we'll want to know how to add new animals with the API.
+* This time, we will click the POST endpoint with the URL of '/Animals'.
+* By clicking 'Try it out' a new menu will appear. Here, you can see the template that's required for entering a new animal. 
+  * However, its recommended that you remove the first row that defines the animalID. This will be automatically generated when an animal is added.
+* Copy and paste the text bellow to see how a new animal is added.
+>{
+  "name": "Tiptoe",
+  "type": "Dog",
+  "age": 1,
+  "sex": "Female",
+  "description": "A cute puppy!"
+}
+* Click 'Execute' and the new animal will be registered, along with a response that contains the details of the animal you just added.
 ## Known Bugs
 
 * _No known bugs at this time._
