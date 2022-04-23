@@ -15,7 +15,7 @@
 
 ## Description
 
-_Detailed Description..._
+_This API is designed to offer animal shelter managers a straightforward way to store records of the sheltered animals, as well as provide potential adoptees an easy way to search for a new companion. An entered animal can be given a name, age, type (cat or dog), sex, and a general description. By using the different endpoints, explained below, users can add new animals to the API and search by the different parameters. Along with these features, users can update existing entries as well as delete entries once an animal finds a home._
 
 ## Setup Instructions
 
