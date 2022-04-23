@@ -2,7 +2,7 @@
 
 #### By _**Nick Sullivan**_
 
-#### _Short Description..._
+#### _An API to track our soon-to-be homed companions._
 
 ## Technologies Used
 
