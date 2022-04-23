@@ -49,7 +49,7 @@ _This API is designed to offer animal shelter managers a straightforward way to 
 >dotnet run
 ---
 ## Using the API
-* This API uses [Swagger](https://swagger.io/) to make experimentation and use simple.
+* This API uses [Swagger](https://swagger.io/) to make experimentation and use simple, as well as documentation of the different endpoints.
 * Once the above commands have been executed, the terminal should provide with you URL bellow.
 > http://localhost:5000/
 * Copy this URL into your browser to be directed to the swagger documentation page.
